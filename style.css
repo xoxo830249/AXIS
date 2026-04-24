@@ -342,10 +342,10 @@ ul { list-style: none; }
 .collection-sub-img:hover img { transform: scale(1.04); }
 
 /* ============================================
-   섹션 5: TECHNICAL DETAIL (4컬럼 다크)
+   섹션 5: TECHNICAL DETAIL (4컬럼)
    ============================================ */
 .technical {
-  background: var(--bg-dark);
+  background: var(--bg);
   padding: 80px 0;
 }
 
@@ -354,7 +354,7 @@ ul { list-style: none; }
   padding: 0 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2px;
+  gap: 20px;
 }
 
 .tech-item {
@@ -364,11 +364,10 @@ ul { list-style: none; }
 
 .tech-img-wrap {
   width: 100%;
-  aspect-ratio: 4/3;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
-  background: #111;
-  filter: grayscale(30%);
-  transition: filter var(--trans);
+  background: var(--bg-off);
+  display: block;
 }
 .tech-img-wrap img {
   width: 100%; height: 100%;
@@ -376,43 +375,38 @@ ul { list-style: none; }
   object-position: center;
   transition: transform 0.6s ease;
 }
-.tech-item:hover .tech-img-wrap { filter: grayscale(0%); }
-.tech-item:hover .tech-img-wrap img { transform: scale(1.05); }
+.tech-item:hover .tech-img-wrap img { transform: scale(1.04); }
 
 .tech-caption {
-  padding: 14px 0 0;
+  padding: 16px 0 0;
   display: flex; flex-direction: column; gap: 4px;
 }
-.tech-num {
-  font-size: 10px; color: #666;
-  letter-spacing: 0.1em;
-}
 .tech-label {
-  font-size: 11px; font-weight: 500;
-  color: #aaa; letter-spacing: 0.05em;
+  font-size: 10px; color: var(--muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.tech-title {
+  font-size: 12px; font-weight: 500;
+  color: var(--black);
 }
 
 /* ============================================
-   섹션 6: INNOVATION (인용구)
+   섹션 6: QUOTE
    ============================================ */
-.innovation {
+.quote-section {
   background: var(--bg-off);
   padding: 100px 40px;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
+  text-align: center;
 }
 
-.innovation-inner {
-  max-width: 1200px; margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: center;
+.quote-inner {
+  max-width: 800px; margin: 0 auto;
 }
 
-.innovation-quote { order: 1; }
-
-.innovation-icon {
+.quote-icon {
   font-family: 'Material Symbols Outlined', var(--serif);
   font-size: 2.5rem;
   color: var(--muted); margin-bottom: 28px;
@@ -420,49 +414,14 @@ ul { list-style: none; }
   letter-spacing: -0.02em;
 }
 
-.innovation-blockquote {
+.quote-text {
   font-family: var(--serif);
   font-size: clamp(1rem, 1.5vw, 1.18rem);
   font-style: italic;
   font-weight: 400;
   line-height: 1.85;
   color: var(--black);
-  margin-bottom: 36px;
 }
-
-.innovation-author {
-  display: flex; align-items: center; gap: 14px;
-}
-
-.innovation-avatar {
-  width: 44px; height: 44px;
-  border-radius: 50%; overflow: hidden;
-  flex-shrink: 0;
-  background: var(--border);
-}
-
-.innovation-name {
-  display: block; font-size: 13px; font-weight: 500;
-  color: var(--black);
-}
-.innovation-role {
-  display: block; font-size: 11px;
-  color: var(--muted); margin-top: 2px;
-}
-
-.innovation-img-wrap {
-  order: 2;
-  aspect-ratio: 3/4;
-  overflow: hidden;
-  border-radius: 2px;
-  display: block;
-}
-.innovation-img-wrap img {
-  width: 100%; height: 100%;
-  object-fit: cover;
-  transition: transform 0.7s ease;
-}
-.innovation-img-wrap:hover img { transform: scale(1.04); }
 
 /* ============================================
    섹션 7: CTA
@@ -574,13 +533,12 @@ ul { list-style: none; }
   .technical-inner {
     grid-template-columns: repeat(2, 1fr);
     padding: 0 24px;
+    gap: 16px;
   }
 
-  .innovation-inner {
-    grid-template-columns: 1fr;
-    gap: 40px;
+  .quote-inner {
+    padding: 0 20px;
   }
-  .innovation-img-wrap { max-width: 400px; margin: 0 auto; }
 
   .footer-inner { flex-direction: column; gap: 24px; }
   .footer-links { gap: 32px; }
@@ -597,8 +555,8 @@ ul { list-style: none; }
   .collection { padding: 48px 0; }
   .collection-inner { padding: 0 20px; }
   .technical { padding: 48px 0; }
-  .technical-inner { grid-template-columns: repeat(2, 1fr); padding: 0 20px; }
-  .innovation { padding: 60px 20px; }
+  .technical-inner { grid-template-columns: repeat(2, 1fr); padding: 0 20px; gap: 12px; }
+  .quote-section { padding: 60px 20px; }
   .cta-ritual { padding: 80px 20px; }
   .footer-inner { padding: 0 20px; }
   .footer-links { flex-direction: column; gap: 16px; }
