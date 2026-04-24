@@ -299,9 +299,8 @@ ul { list-style: none; }
 
 .collection-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   gap: 4px;
-  align-items: start;
 }
 
 .collection-main {
@@ -309,7 +308,7 @@ ul { list-style: none; }
 }
 .collection-main-img {
   width: 100%;
-  aspect-ratio: 2/3;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   display: block;
 }
@@ -323,13 +322,13 @@ ul { list-style: none; }
 
 .collection-sub {
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: 1fr 1fr;
   gap: 4px;
 }
 
 .collection-sub-img {
   width: 100%;
-  aspect-ratio: 4/3;
+  height: 100%;
   overflow: hidden;
   display: block;
 }
@@ -526,8 +525,8 @@ ul { list-style: none; }
 
   .collection-grid { grid-template-columns: 1fr; }
   .collection-main-img { aspect-ratio: 4/3; }
-  .collection-sub { grid-template-columns: 1fr 1fr; }
-  .collection-sub-img { aspect-ratio: 1; }
+  .collection-sub { grid-template-rows: auto; grid-template-columns: 1fr 1fr; }
+  .collection-sub-img { height: auto; aspect-ratio: 1; }
   .collection-inner { padding: 0 24px; }
 
   .technical-inner {
