@@ -1,323 +1,253 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AXIS — 압력이동양말</title>
-  <meta name="description" content="AXIS 압력이동양말 — 혁신적인 압력 분산 기술로 만든 프리미엄 기능성 양말. 착용의 새로운 기준." />
+  <title>AXIS — Precision Wellness for the Modern Professional</title>
+  <meta name="description" content="AXIS 압력이동양말 — 혁신적인 압력 분산 기술로 만든 프리미엄 기능성 양말." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-  <!-- ==================== 네비게이션 ==================== -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#" class="nav-logo">AXIS</a>
+  <!-- ===== 네비게이션 ===== -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="./로고이미지/로고.png" alt="AXIS 로고" class="nav-logo-img" />
+        <span class="nav-logo-text">AXIS</span>
+      </a>
       <ul class="nav-links">
-        <li><a href="#features" class="nav-link">기술</a></li>
-        <li><a href="#detail" class="nav-link">상세보기</a></li>
-        <li><a href="#gallery" class="nav-link">착용샷</a></li>
-        <li><a href="#colors" class="nav-link">컬러</a></li>
+        <li><a href="#purpose" class="nav-link">Relief Ritual</a></li>
+        <li><a href="#science" class="nav-link active">Our Science</a></li>
+        <li><a href="#collection" class="nav-link">The Collection</a></li>
+        <li><a href="#journal" class="nav-link">Journal</a></li>
       </ul>
-      <a href="#purchase" class="nav-cta" id="nav-cta-btn">구매하기</a>
-      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="메뉴 열기">
+      <a href="#shop" class="nav-shop" id="nav-shop-btn">SHOP NOW</a>
+      <button class="nav-mobile-btn" id="nav-mobile-btn" aria-label="메뉴">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <!-- 모바일 드롭다운 메뉴 -->
-    <div class="mobile-menu" id="mobile-menu">
-      <a href="#features" class="mobile-link">기술</a>
-      <a href="#detail" class="mobile-link">상세보기</a>
-      <a href="#gallery" class="mobile-link">착용샷</a>
-      <a href="#colors" class="mobile-link">컬러</a>
-      <a href="#purchase" class="mobile-link mobile-cta">구매하기</a>
+    <div class="nav-mobile-menu" id="nav-mobile-menu">
+      <a href="#purpose">Relief Ritual</a>
+      <a href="#science">Our Science</a>
+      <a href="#collection">The Collection</a>
+      <a href="#journal">Journal</a>
+      <a href="#shop" class="nav-mobile-cta">SHOP NOW</a>
     </div>
   </nav>
 
-  <!-- ==================== 히어로 섹션 ==================== -->
-  <section class="hero" id="hero">
-    <!-- 배경 슬라이드 이미지들 -->
-    <div class="hero-slides">
-      <div class="hero-slide active" style="background-image: url('./메인이미지/메인이미지 (1).png')"></div>
-      <div class="hero-slide" style="background-image: url('./메인이미지/메인이미지 (2).png')"></div>
+  <!-- ===== 섹션 1: PURPOSE — 히어로 ===== -->
+  <section class="purpose" id="purpose">
+    <div class="purpose-inner">
+      <!-- 왼쪽 텍스트 -->
+      <div class="purpose-text">
+        <span class="label">THE PURPOSE</span>
+        <h1 class="purpose-heading">The Axis of<br />Comfort.</h1>
+        <p class="purpose-body">
+          우리가 내딛는 모든 발걸음에는, 보이지 않는 순서가 존재합니다.
+          일반적으로 우리는 발이 피로함을 느낄때까지 별 생각 없이 걸어가고
+          오래오래도록 특 허된의 주는 분산적인 기술
+        </p>
+      </div>
+      <!-- 오른쪽 이미지 -->
+      <div class="purpose-img-wrap">
+        <img src="./메인이미지/메인이미지 (1).png" alt="AXIS 컬러 양말 컬렉션" class="purpose-img" />
+      </div>
     </div>
-    <!-- 그라디언트 오버레이 -->
-    <div class="hero-overlay"></div>
+  </section>
 
-    <!-- 히어로 콘텐츠 -->
-    <div class="hero-content">
-      <div class="hero-badge">NEW COLLECTION 2025</div>
-      <h1 class="hero-title">
-        <span class="title-line">압력이 움직이는</span>
-        <span class="title-line accent">양말, AXIS</span>
-      </h1>
-      <p class="hero-desc">
-        혁신적인 압력 분산 기술로 설계된 프리미엄 기능성 양말.<br />
-        발의 피로를 줄이고, 매 걸음에 활력을 더합니다.
+  <!-- ===== 섹션 2: SCIENCE 인트로 (흰 배경 텍스트 블록) ===== -->
+  <section class="science-intro" id="science">
+    <div class="science-intro-inner">
+      <h2 class="science-quote-title">The Weight of Unseen Stillness</h2>
+      <p class="science-quote-body">
+        태보 지점 고요한 순간이 무르를 짓고 내려 앉는 느낌입니다. 하성 앞에야두는 간시이 동안, 압신의피지하와
+        설명입니다해는 진지의 조건에 발생하고, 피곤해내는 투표과 무기름으로 순환이 사라질 활력활대를 이
+        됩니다. 이 고인 같앞에서의 발생하고 발바닥, 강신이 커진 조화처어 8부터내와 정을 사시이 레이지해보는 모
+        이서를이는 접합니다.
       </p>
-      <div class="hero-actions">
-        <a href="#detail" class="btn-primary" id="hero-detail-btn">상세 보기</a>
-        <a href="#features" class="btn-outline" id="hero-features-btn">기술 알아보기</a>
-      </div>
-    </div>
-
-    <!-- 슬라이드 인디케이터 -->
-    <div class="hero-indicators">
-      <button class="indicator active" data-slide="0" id="slide-indicator-0"></button>
-      <button class="indicator" data-slide="1" id="slide-indicator-1"></button>
-    </div>
-
-    <!-- 스크롤 다운 힌트 -->
-    <div class="scroll-hint">
-      <span>스크롤</span>
-      <div class="scroll-line"></div>
+      <p class="science-quote-cta">
+        AXIS는 당신이 닫혀진 시선을 다시 초복게합니다. 당신의 채택가, 다시가버릴수 있도록.
+      </p>
     </div>
   </section>
 
-  <!-- ==================== 기능 소개 섹션 ==================== -->
-  <section class="features" id="features">
-    <div class="section-container">
-      <div class="section-header">
-        <span class="section-tag">TECHNOLOGY</span>
-        <h2 class="section-title">압력이동 기술이란?</h2>
-        <p class="section-desc">AXIS만의 특허 기술로 발 전체에 걸쳐<br />압력을 능동적으로 분산시켜 줍니다.</p>
-      </div>
-      <div class="features-grid">
-        <div class="feature-card" id="feature-card-1">
-          <div class="feature-icon">⚡</div>
-          <h3 class="feature-title">압력 분산</h3>
-          <p class="feature-text">특수 구조의 패턴이 발바닥 압력을 고르게 분산하여 장시간 착용에도 피로를 줄여줍니다.</p>
+  <!-- ===== 섹션 3: 3단 이미지 그리드 (착용샷) ===== -->
+  <section class="wearing-grid" id="wearing">
+    <div class="wgrid-inner">
+
+      <div class="wgrid-item wgrid-item--left">
+        <div class="wgrid-img-wrap">
+          <img src="./착용이미지/착용이미지 (1).jpg" alt="Intentional Time" />
         </div>
-        <div class="feature-card" id="feature-card-2">
-          <div class="feature-icon">🎯</div>
-          <h3 class="feature-title">정밀 핏</h3>
-          <p class="feature-text">발의 해부학적 구조를 분석해 설계된 입체 패턴으로 발에 완벽하게 밀착됩니다.</p>
-        </div>
-        <div class="feature-card" id="feature-card-3">
-          <div class="feature-icon">🌈</div>
-          <h3 class="feature-title">컬러 블로킹</h3>
-          <p class="feature-text">대담하고 감각적인 컬러 조합으로 일상에 포인트를 주는 패셔너블한 기능성 양말입니다.</p>
-        </div>
-        <div class="feature-card" id="feature-card-4">
-          <div class="feature-icon">♻️</div>
-          <h3 class="feature-title">지속가능 소재</h3>
-          <p class="feature-text">환경을 생각한 고기능성 원사를 사용하여 내구성과 친환경성을 동시에 실현했습니다.</p>
+        <div class="wgrid-caption">
+          <span class="wgrid-label">Intentional Time</span>
+          <p>AXIS의 함내를 짜 가볍운 스트레칭을 시도하세요.
+          압박이 로릐이해나고 몸의 주인아(미이)이 취해짐을
+          느낍니다.</p>
         </div>
       </div>
+
+      <div class="wgrid-item wgrid-item--center">
+        <div class="wgrid-img-wrap tall">
+          <img src="./착용이미지/착용이미지 (9).png" alt="Intelligent Sensing" />
+        </div>
+        <div class="wgrid-caption center">
+          <span class="wgrid-label">Intelligent Sensing</span>
+          <p>미세 전류와 같은 압신의로 인해 기능을 축적되어 발루수를
+          통해 감신의만성을 기록합니다.</p>
+        </div>
+      </div>
+
+      <div class="wgrid-item wgrid-item--right">
+        <div class="wgrid-img-wrap">
+          <img src="./착용이미지/착용이미지 (10).png" alt="Gentle Awakening" />
+        </div>
+        <div class="wgrid-caption">
+          <span class="wgrid-label">Gentle Awakening</span>
+          <p>발가락 밑근을 위해내려, 본적, 차세한 걱어짝 진
+          정도를 압신의 사에서 사기하여 발배를 줄이습니다.</p>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- ==================== 상세 페이지 섹션 ==================== -->
-  <section class="detail" id="detail">
-    <div class="section-container">
-      <div class="section-header">
-        <span class="section-tag">PRODUCT DETAIL</span>
-        <h2 class="section-title">제품 상세</h2>
-        <p class="section-desc">AXIS 압력이동양말의 디테일을<br />가까이서 확인하세요.</p>
+  <!-- ===== 섹션 4: THE COLLECTION ===== -->
+  <section class="collection" id="collection">
+    <div class="collection-inner">
+      <div class="collection-header">
+        <span class="label">THE COLLECTION</span>
+        <p class="collection-desc">마지내조 몸적이, 감신의 몸의 발생이 스타일이 있는 않은 기능을 크레버 발생됩 발생됩니다.</p>
       </div>
 
-      <!-- 메인 제품 이미지 갤러리 -->
-      <div class="detail-gallery">
-        <!-- 왼쪽: 메인 큰 이미지 -->
-        <div class="detail-main-img" id="detail-main-display">
-          <img src="./제품이미지/제품이미지 (1).png" alt="AXIS 압력이동양말 메인 이미지" id="detail-main-img" />
-        </div>
-        <!-- 오른쪽: 썸네일 그리드 -->
-        <div class="detail-thumbs">
-          <div class="thumb-item active" data-img="./제품이미지/제품이미지 (1).png" id="thumb-1">
-            <img src="./제품이미지/제품이미지 (1).png" alt="제품이미지 1" />
-          </div>
-          <div class="thumb-item" data-img="./제품이미지/제품이미지 (2).png" id="thumb-2">
-            <img src="./제품이미지/제품이미지 (2).png" alt="제품이미지 2" />
-          </div>
-          <div class="thumb-item" data-img="./제품이미지/제품이미지 (3).png" id="thumb-3">
-            <img src="./제품이미지/제품이미지 (3).png" alt="제품이미지 3" />
-          </div>
-          <div class="thumb-item" data-img="./제품이미지/제품이미지 (4).png" id="thumb-4">
-            <img src="./제품이미지/제품이미지 (4).png" alt="제품이미지 4" />
-          </div>
-          <div class="thumb-item" data-img="./제품이미지/제품이미지 (6).png" id="thumb-6">
-            <img src="./제품이미지/제품이미지 (6).png" alt="제품이미지 6" />
-          </div>
-          <div class="thumb-item" data-img="./제품이미지/제품이미지 (7).png" id="thumb-7">
-            <img src="./제품이미지/제품이미지 (7).png" alt="제품이미지 7" />
-          </div>
-          <div class="thumb-item" data-img="./제품이미지/제품이미지 (8).png" id="thumb-8">
-            <img src="./제품이미지/제품이미지 (8).png" alt="제품이미지 8" />
-          </div>
-          <div class="thumb-item" data-img="./제품이미지/제품이미지 (9).png" id="thumb-9">
-            <img src="./제품이미지/제품이미지 (9).png" alt="제품이미지 9" />
-          </div>
-          <div class="thumb-item" data-img="./제품이미지/제품이미지 (10).png" id="thumb-10">
-            <img src="./제품이미지/제품이미지 (10).png" alt="제품이미지 10" />
-          </div>
-          <div class="thumb-item" data-img="./제품이미지/제품이미지 (11).png" id="thumb-11">
-            <img src="./제품이미지/제품이미지 (11).png" alt="제품이미지 11" />
+      <div class="collection-grid">
+        <!-- 왼쪽 큰 이미지 (LIFESTYLE) -->
+        <div class="collection-main" id="lifestyle-block">
+          <div class="collection-main-img">
+            <img src="./서브이미지/서브이미지 (1).jpg" alt="LIFESTYLE" />
           </div>
         </div>
-      </div>
 
-      <!-- 서브 이미지 가로 배너 -->
-      <div class="sub-images">
-        <div class="sub-img-wrap">
-          <img src="./서브이미지/서브이미지 (1).jpg" alt="AXIS 서브이미지 1" />
-          <div class="sub-img-label">Color Variety</div>
-        </div>
-        <div class="sub-img-wrap">
-          <img src="./서브이미지/서브이미지 (2).png" alt="AXIS 서브이미지 2" />
-          <div class="sub-img-label">Design Detail</div>
-        </div>
-        <div class="sub-img-wrap">
-          <img src="./서브이미지/서브이미지 (3).png" alt="AXIS 서브이미지 3" />
-          <div class="sub-img-label">Premium Quality</div>
+        <!-- 오른쪽 2단 이미지 (PRODUCT IMAGE / 착용) -->
+        <div class="collection-sub">
+          <div class="collection-sub-img top">
+            <img src="./제품이미지/제품이미지 (3).png" alt="PRODUCT IMAGE" />
+          </div>
+          <div class="collection-sub-img bottom">
+            <img src="./착용이미지/착용이미지 (13).png" alt="착용 이미지" />
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==================== 착용 이미지 섹션 (중간 섹션) ==================== -->
-  <section class="wearing" id="gallery">
-    <div class="wearing-header">
-      <span class="section-tag light">STYLING</span>
-      <h2 class="section-title light">착용샷</h2>
-      <p class="section-desc light">일상 속에서 빛나는 AXIS,<br />다양한 스타일에 어울립니다.</p>
-    </div>
+  <!-- ===== 섹션 5: TECHNICAL DETAIL — 4컬럼 어두운 섹션 ===== -->
+  <section class="technical" id="science-detail">
+    <div class="technical-inner">
 
-    <!-- 착용 이미지 마소너리 갤러리 -->
-    <div class="wearing-masonry">
-      <div class="masonry-col">
-        <div class="masonry-item" id="wearing-1">
-          <img src="./착용이미지/착용이미지 (1).png" alt="착용이미지 1" />
+      <div class="tech-item" id="tech-1">
+        <div class="tech-img-wrap">
+          <img src="./제품이미지/제품이미지 (1).png" alt="Maximum Pressure" />
         </div>
-        <div class="masonry-item" id="wearing-9">
-          <img src="./착용이미지/착용이미지 (9).png" alt="착용이미지 9" />
-        </div>
-        <div class="masonry-item" id="wearing-10">
-          <img src="./착용이미지/착용이미지 (10).png" alt="착용이미지 10" />
+        <div class="tech-caption">
+          <span class="tech-num">01</span>
+          <span class="tech-label">Maximum Pressure</span>
         </div>
       </div>
-      <div class="masonry-col">
-        <div class="masonry-item tall" id="wearing-11">
-          <img src="./착용이미지/착용이미지 (11).png" alt="착용이미지 11" />
-        </div>
-        <div class="masonry-item" id="wearing-12">
-          <img src="./착용이미지/착용이미지 (12).png" alt="착용이미지 12" />
-        </div>
-      </div>
-      <div class="masonry-col">
-        <div class="masonry-item" id="wearing-13">
-          <img src="./착용이미지/착용이미지 (13).png" alt="착용이미지 13" />
-        </div>
-        <div class="masonry-item" id="wearing-14">
-          <img src="./착용이미지/착용이미지 (14).png" alt="착용이미지 14" />
-        </div>
-        <div class="masonry-item" id="wearing-17">
-          <img src="./착용이미지/착용이미지 (17).png" alt="착용이미지 17" />
-        </div>
-      </div>
-      <div class="masonry-col">
-        <div class="masonry-item" id="wearing-15">
-          <img src="./착용이미지/착용이미지 (15).png" alt="착용이미지 15" />
-        </div>
-        <div class="masonry-item tall" id="wearing-16">
-          <img src="./착용이미지/착용이미지 (16).png" alt="착용이미지 16" />
-        </div>
-      </div>
-    </div>
 
-    <!-- 착용 jpg 이미지 (1).jpg -->
-    <div class="wearing-banner">
-      <img src="./착용이미지/착용이미지 (1).jpg" alt="AXIS 착용 배너" />
-      <div class="wearing-banner-text">
-        <p>매 순간, 압력이 움직입니다.</p>
-        <span>AXIS Pressure-Moving Socks</span>
+      <div class="tech-item" id="tech-2">
+        <div class="tech-img-wrap">
+          <img src="./제품이미지/제품이미지 (3)_3.jpg" alt="Technology Sensing" />
+        </div>
+        <div class="tech-caption">
+          <span class="tech-num">02</span>
+          <span class="tech-label">Technology Sensing</span>
+        </div>
+      </div>
+
+      <div class="tech-item" id="tech-3">
+        <div class="tech-img-wrap">
+          <img src="./제품이미지/제품이미지 (2).png" alt="Anatomic Design" />
+        </div>
+        <div class="tech-caption">
+          <span class="tech-num">03</span>
+          <span class="tech-label">Anatomic Design</span>
+        </div>
+      </div>
+
+      <div class="tech-item" id="tech-4">
+        <div class="tech-img-wrap">
+          <img src="./메인이미지/메인이미지 (2).jpg" alt="Daily Equilibrium" />
+        </div>
+        <div class="tech-caption">
+          <span class="tech-num">04</span>
+          <span class="tech-label">Daily Equilibrium</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== 섹션 6: INNOVATION — 인용구 + 이미지 ===== -->
+  <section class="innovation" id="innovation">
+    <div class="innovation-inner">
+      <!-- 왼쪽 프로필 + 인용구 -->
+      <div class="innovation-quote">
+        <div class="innovation-icon">format_quote</div>
+        <blockquote class="innovation-blockquote">
+          "Your innovation should be felt, not necessarily seen. We designed AXIS to bridge the gap between necessary medical function and modern professional staples. Behind the minimalist silhouette lies a sophisticated data-driven system, tirelessly working to restore your body's natural flow without ever compromising your style."
+        </blockquote>
+        <div class="innovation-author">
+          <div class="innovation-avatar">
+            <img src="./착용이미지/착용이미지 (17).png" alt="Author" />
+          </div>
+          <div class="innovation-author-info">
+            <span class="innovation-name">Dr. Mia Kwan</span>
+            <span class="innovation-role">Chief Science Officer, AXIS</span>
+          </div>
+        </div>
+      </div>
+      <!-- 오른쪽 이미지 -->
+      <div class="innovation-img-wrap">
+        <img src="./제품이미지/제품이미지 (3)_2.jpg" alt="INNOVATION" />
       </div>
     </div>
   </section>
 
-  <!-- ==================== 컬러 팔레트 섹션 ==================== -->
-  <section class="colors" id="colors">
-    <div class="section-container">
-      <div class="section-header">
-        <span class="section-tag">COLOR COLLECTION</span>
-        <h2 class="section-title">나만의 컬러</h2>
-        <p class="section-desc">감각적인 컬러 블로킹으로<br />어떤 스타일에도 포인트를 더합니다.</p>
-      </div>
-      <div class="color-swatches">
-        <div class="swatch" style="background: #6CC5A3;" id="swatch-mint"><span>민트</span></div>
-        <div class="swatch" style="background: #7B5EA7;" id="swatch-purple"><span>퍼플</span></div>
-        <div class="swatch" style="background: #E8A630;" id="swatch-yellow"><span>옐로우</span></div>
-        <div class="swatch" style="background: #E84F6B;" id="swatch-pink"><span>핑크</span></div>
-        <div class="swatch" style="background: #4EACCD;" id="swatch-sky"><span>스카이</span></div>
-        <div class="swatch" style="background: #E05C2A;" id="swatch-orange"><span>오렌지</span></div>
-        <div class="swatch" style="background: #1D2D4A;" id="swatch-navy"><span>네이비</span></div>
-        <div class="swatch" style="background: #F4C8C0;" id="swatch-rose"><span>로즈</span></div>
-      </div>
+  <!-- ===== 섹션 7: CTA — Experience the Ritual ===== -->
+  <section class="cta-ritual" id="shop">
+    <div class="cta-inner">
+      <p class="cta-sub">Experience the Ritual.</p>
+      <p class="cta-desc">Join a community of professionals who refuse to compromise on their well-being. Start your relief journey today.</p>
+      <a href="#" class="cta-btn" id="cta-shop-btn">SHOP COLLECTION</a>
     </div>
   </section>
 
-  <!-- ==================== 구매 CTA 섹션 ==================== -->
-  <section class="purchase" id="purchase">
-    <div class="purchase-bg"></div>
-    <div class="purchase-content">
-      <span class="section-tag light">LIMITED EDITION</span>
-      <h2 class="purchase-title">지금 바로 경험하세요</h2>
-      <p class="purchase-desc">AXIS 압력이동양말 — 발이 달라지는 순간을 느껴보세요.</p>
-      <div class="purchase-actions">
-        <a href="#" class="btn-primary large" id="purchase-btn">구매하기</a>
-        <a href="#" class="btn-outline-light large" id="inquiry-btn">문의하기</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== 푸터 ==================== -->
-  <footer class="footer">
-    <div class="footer-container">
+  <!-- ===== 푸터 ===== -->
+  <footer class="footer" id="footer">
+    <div class="footer-inner">
       <div class="footer-brand">
         <div class="footer-logo">AXIS</div>
-        <p class="footer-tagline">압력이 움직이는 양말</p>
+        <p class="footer-tagline">© 2024 AXIS. Precision Wellness for the Modern<br />Professional.</p>
       </div>
       <div class="footer-links">
         <div class="footer-col">
-          <h4>제품</h4>
-          <a href="#detail">상세 보기</a>
-          <a href="#colors">컬러 컬렉션</a>
-          <a href="#purchase">구매하기</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Shipping & Returns</a>
         </div>
         <div class="footer-col">
-          <h4>기술</h4>
-          <a href="#features">압력이동 기술</a>
-          <a href="#features">소재 정보</a>
-        </div>
-        <div class="footer-col">
-          <h4>고객지원</h4>
-          <a href="#">FAQ</a>
-          <a href="#">교환 / 반품</a>
-          <a href="#">문의하기</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Wholesale</a>
         </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>© 2025 AXIS. All rights reserved. | 압력이동양말 전문 브랜드</p>
-    </div>
   </footer>
-
-  <!-- 라이트박스 (이미지 확대) -->
-  <div class="lightbox" id="lightbox">
-    <button class="lightbox-close" id="lightbox-close" aria-label="닫기">✕</button>
-    <img class="lightbox-img" id="lightbox-img" src="" alt="" />
-    <button class="lightbox-prev" id="lightbox-prev" aria-label="이전">&#8249;</button>
-    <button class="lightbox-next" id="lightbox-next" aria-label="다음">&#8250;</button>
-  </div>
 
   <script src="script.js"></script>
 </body>
-
 </html>
