@@ -32,7 +32,7 @@ body {
   overflow-x: hidden;
 }
 
-img { display: block; width: 100%; height: 100%; object-fit: cover; }
+img { display: block; width: 100%; object-fit: cover; }
 a  { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 
@@ -178,9 +178,14 @@ ul { list-style: none; }
   aspect-ratio: 3/4;
   overflow: hidden;
   border-radius: 2px;
+  display: block;
 }
-.purpose-img { transition: transform 0.7s ease; }
-.purpose-img-wrap:hover .purpose-img { transform: scale(1.04); }
+.purpose-img-wrap img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+.purpose-img-wrap:hover img { transform: scale(1.04); }
 
 /* ============================================
    섹션 2: SCIENCE INTRO (인트로 텍스트)
@@ -242,10 +247,15 @@ ul { list-style: none; }
   aspect-ratio: 3/4;
   overflow: hidden;
   background: var(--bg-off);
+  display: block;
 }
 .wgrid-img-wrap.tall { aspect-ratio: 3/5; }
 
-.wgrid-img-wrap img { transition: transform 0.6s ease; }
+.wgrid-img-wrap img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
 .wgrid-img-wrap:hover img { transform: scale(1.04); }
 
 .wgrid-caption {
@@ -291,29 +301,44 @@ ul { list-style: none; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4px;
-  height: 580px;
+  align-items: start;
 }
 
 .collection-main {
   overflow: hidden;
 }
 .collection-main-img {
-  width: 100%; height: 100%;
+  width: 100%;
+  aspect-ratio: 2/3;
   overflow: hidden;
+  display: block;
 }
-.collection-main-img img { transition: transform 0.7s ease; }
+.collection-main-img img {
+  width: 100%; height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
 .collection-main:hover .collection-main-img img { transform: scale(1.04); }
 
 .collection-sub {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto auto;
   gap: 4px;
 }
 
 .collection-sub-img {
+  width: 100%;
+  aspect-ratio: 4/3;
   overflow: hidden;
+  display: block;
 }
-.collection-sub-img img { transition: transform 0.6s ease; }
+.collection-sub-img img {
+  width: 100%; height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
 .collection-sub-img:hover img { transform: scale(1.04); }
 
 /* ============================================
@@ -430,8 +455,13 @@ ul { list-style: none; }
   aspect-ratio: 3/4;
   overflow: hidden;
   border-radius: 2px;
+  display: block;
 }
-.innovation-img-wrap img { transition: transform 0.7s ease; }
+.innovation-img-wrap img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
 .innovation-img-wrap:hover img { transform: scale(1.04); }
 
 /* ============================================
@@ -535,9 +565,9 @@ ul { list-style: none; }
 
   .wgrid-inner { grid-template-columns: 1fr; gap: 40px; padding: 0 24px; }
 
-  .collection-grid { height: auto; grid-template-columns: 1fr; }
-  .collection-main { aspect-ratio: 4/3; }
-  .collection-sub { grid-template-rows: auto; grid-template-columns: 1fr 1fr; }
+  .collection-grid { grid-template-columns: 1fr; }
+  .collection-main-img { aspect-ratio: 4/3; }
+  .collection-sub { grid-template-columns: 1fr 1fr; }
   .collection-sub-img { aspect-ratio: 1; }
   .collection-inner { padding: 0 24px; }
 
